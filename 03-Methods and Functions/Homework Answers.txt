@@ -1,0 +1,57 @@
+1.)
+
+def vol(rad):
+    return ((4/3) * 3.14 * rad**3)
+    
+2.)
+
+def ran_check(num, low, high):
+    if num in range(low, high+1):
+        print('{} is in the range between {} and {}'.format(num, low, high))
+    else:
+        print('{} is not in the range between {} and {}'.format(num, low, high))
+        
+def ran_check(num, low, high):
+    return num in range(low, high+1)
+
+3.)
+
+def up_low(s):
+    upper = 0
+    lower = 0
+    
+    for word in [s]:
+        for char in word:
+            if char.isupper():
+                upper += 1
+            elif char.islower():
+                lower += 1
+    print('Number of uppercase characters: {}'.format(upper))
+    print('Number of lowercase characters: {}'.format(lower))
+    
+4.)
+
+def unique_list(lst):
+    return list(set(lst))
+5.)
+
+def multiply(numbers):
+    total = 1
+    for num in numbers:
+        total *= num
+    return total
+    
+6.)
+def palindrome(s):
+    return s == s[::-1]
+
+7.)
+import string
+
+def ispangram(str1, alphabet=string.ascii_lowercase):
+    for char in alphabet:
+        if char not in str1.lower():
+            return False
+    return True
+    
+8.)
